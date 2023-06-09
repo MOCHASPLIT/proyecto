@@ -1,5 +1,5 @@
-//Ejecutar sql
-
+## Ejecutar sql
+```
 CREATE TABLE sortix83_guerrero.users (
   id INT PRIMARY KEY AUTO_INCREMENT,
   username VARCHAR(50),
@@ -14,20 +14,23 @@ CREATE TABLE sortix83_guerrero.tasks (
   user_id INT,
   FOREIGN KEY (user_id) REFERENCES users(id)
 );
+```
 
-
-//Carpeta Server
-	
+## En la carpeta server
+```
 npm i
-
-//Configurar archivo .env
+```
+Configurar archivo .env
+```
 PORT = '3000'
 SECRET_KEY = 'spUchLyibRA70isPewR#'
 EXPIRES_KEY = '2d'
 
 npm run ts
 npm run js
-
-//Carpeta Frontend
+```
+## En la carpeta frontend
+```
 npm i
 ng serve --o
+```
